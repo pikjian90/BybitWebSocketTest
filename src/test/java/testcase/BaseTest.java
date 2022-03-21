@@ -3,12 +3,16 @@ package testcase;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extentReports;
+    public static org.apache.log4j.Logger logger;
 
     @BeforeSuite
     public void beforeSuite(){
@@ -23,6 +27,9 @@ public class BaseTest {
         extentReports.setSystemInfo("Environment","QA");
         extentReports.setSystemInfo("Tester","QA");
 
+        logger = Logger.getLogger("BybitWebSocketTest"); // added logger
+        PropertyConfigurator.configure("log4j.properties");
+        logger.setLevel(Level.INFO);
     }
 
     @AfterSuite

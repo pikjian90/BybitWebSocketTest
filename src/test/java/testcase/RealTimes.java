@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 import common.EndPoint;
 import common.ExpectedResult;
 import common.RealTimesResponseModel;
+import org.apache.log4j.Logger;
 import org.java_websocket.enums.ReadyState;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -87,7 +88,7 @@ public class RealTimes extends BaseTest {
                     + "}";
             c.send(input);
             Thread.sleep(3000);
-            System.out.println(c.responseMessage.get(c.responseMessage.size()-1));
+            logger.info(c.responseMessage.get(c.responseMessage.size()-1));
 
             Gson g = new Gson();
             RealTimesResponseModel res = g.fromJson(c.responseMessage.get(c.responseMessage.size()-1), RealTimesResponseModel.class);
