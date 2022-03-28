@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BybitWebSocketTest Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="BybitWebSocketTest Test(failed)" verbose="0">
+    <classes>
+      <class name="testcase.Kline">
+        <methods>
+          <include name="testMessage" invocation-numbers="3"/>
+          <include name="beforeSuite"/>
+          <include name="tearDownSuite"/>
+          <include name="closeConnection"/>
+          <include name="startConnection"/>
+        </methods>
+      </class> <!-- testcase.Kline -->
+      <class name="testcase.Trade">
+        <methods>
+          <include name="closeConnection"/>
+          <include name="beforeSuite"/>
+          <include name="startConnection"/>
+          <include name="tearDownSuite"/>
+          <include name="testMessage" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- testcase.Trade -->
+    </classes>
+  </test> <!-- BybitWebSocketTest Test(failed) -->
+</suite> <!-- Failed suite [BybitWebSocketTest Suite] -->

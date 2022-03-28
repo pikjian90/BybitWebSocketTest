@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 61.768 sec <<< FAILURE!
+testMessage(testcase.Kline)  Time elapsed: 3.075 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Symbol is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	SymbolName is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	KlineType is incorrect expected [1h] but found [1m],
+	Trading Pair is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	Trading Pair is incorrect expected [XRPUSDT] but found [BTCUSDT]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at testcase.Kline.testMessage(Kline.java:113)
+
+testMessage(testcase.Trade)  Time elapsed: 3.026 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+	Symbol is incorrect expected [DOTUSDT] but found [BITUSDT],
+	SymbolName is incorrect expected [DOTUSDT] but found [BITUSDT]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at testcase.Trade.testMessage(Trade.java:106)
+

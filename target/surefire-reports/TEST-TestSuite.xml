@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="18" failures="2" name="TestSuite" time="45.619" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.12+7-LTS"/>
+    <property name="sun.boot.library.path" value="/Users/pikjian/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/pikjian/IdeaProjects/BybitWebSocketTest"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="SG"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/pikjian/IdeaProjects/BybitWebSocketTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.12+7-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/2z/tdnqqt6d4qv0vkt4kf9p33z00000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/pikjian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="11.6"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/pikjian"/>
+    <property name="user.timezone" value="Asia/Singapore"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="pikjian"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="/Users/pikjian/Library/Java/JavaVirtualMachines/corretto-11.0.12/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.8.4/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Corretto-11.0.12.7.2"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="testcase.Kline" name="testConnection" time="0.031"/>
+  <testcase classname="testcase.Kline" name="testMessage" time="3.124"/>
+  <testcase classname="testcase.Kline" name="testMessage" time="3.014"/>
+  <testcase classname="testcase.Kline" name="testMessage" time="3.015"/>
+  <testcase classname="testcase.Kline" name="testMessage" time="3.075">
+    <failure message="The following asserts failed:
+	Symbol is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	SymbolName is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	KlineType is incorrect expected [1h] but found [1m],
+	Trading Pair is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	Trading Pair is incorrect expected [XRPUSDT] but found [BTCUSDT]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Symbol is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	SymbolName is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	KlineType is incorrect expected [1h] but found [1m],
+	Trading Pair is incorrect expected [XRPUSDT] but found [BTCUSDT],
+	Trading Pair is incorrect expected [XRPUSDT] but found [BTCUSDT]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at testcase.Kline.testMessage(Kline.java:113)
+</failure>
+    <system-out>INFO	2022-03-28 12:01:54,488	14406	BybitWebSocketTest	[main]	{&quot;symbol&quot;:&quot;BTCUSDT&quot;,&quot;symbolName&quot;:&quot;BTCUSDT&quot;,&quot;topic&quot;:&quot;kline&quot;,&quot;params&quot;:{&quot;realtimeInterval&quot;:&quot;24h&quot;,&quot;klineType&quot;:&quot;1m&quot;,&quot;binary&quot;:&quot;FALSE&quot;},&quot;data&quot;:[{&quot;t&quot;:1648440060000,&quot;s&quot;:&quot;BTCUSDT&quot;,&quot;sn&quot;:&quot;BTCUSDT&quot;,&quot;c&quot;:&quot;46507.11&quot;,&quot;h&quot;:&quot;46507.11&quot;,&quot;l&quot;:&quot;46507.11&quot;,&quot;o&quot;:&quot;46507.11&quot;,&quot;v&quot;:&quot;0.000474&quot;}],&quot;f&quot;:false,&quot;sendTime&quot;:1648440112021}
+</system-out>
+  </testcase>
+  <testcase classname="testcase.Kline" name="testMessage" time="2.991"/>
+  <testcase classname="testcase.RealTimes" name="testConnection" time="0.001"/>
+  <testcase classname="testcase.RealTimes" name="testMessage" time="3.049"/>
+  <testcase classname="testcase.RealTimes" name="testMessage" time="3.025"/>
+  <testcase classname="testcase.RealTimes" name="testMessage" time="3.026"/>
+  <testcase classname="testcase.RealTimes" name="testMessage" time="3.016"/>
+  <testcase classname="testcase.RealTimes" name="testMessage" time="3.038"/>
+  <testcase classname="testcase.Trade" name="testConnection" time="0.001"/>
+  <testcase classname="testcase.Trade" name="testMessage" time="3.042"/>
+  <testcase classname="testcase.Trade" name="testMessage" time="3.054"/>
+  <testcase classname="testcase.Trade" name="testMessage" time="3.034"/>
+  <testcase classname="testcase.Trade" name="testMessage" time="3.057"/>
+  <testcase classname="testcase.Trade" name="testMessage" time="3.026">
+    <failure message="The following asserts failed:
+	Symbol is incorrect expected [DOTUSDT] but found [BITUSDT],
+	SymbolName is incorrect expected [DOTUSDT] but found [BITUSDT]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+	Symbol is incorrect expected [DOTUSDT] but found [BITUSDT],
+	SymbolName is incorrect expected [DOTUSDT] but found [BITUSDT]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at testcase.Trade.testMessage(Trade.java:106)
+</failure>
+    <system-out>INFO	2022-03-28 12:02:33,012	52930	BybitWebSocketTest	[main]	{&quot;symbol&quot;:&quot;BITUSDT&quot;,&quot;symbolName&quot;:&quot;BITUSDT&quot;,&quot;topic&quot;:&quot;trade&quot;,&quot;params&quot;:{&quot;realtimeInterval&quot;:&quot;24h&quot;,&quot;binary&quot;:&quot;FALSE&quot;},&quot;data&quot;:[{&quot;v&quot;:&quot;2120000000000104911&quot;,&quot;t&quot;:1648440151051,&quot;p&quot;:&quot;1.736&quot;,&quot;q&quot;:&quot;7.14&quot;,&quot;m&quot;:false}],&quot;f&quot;:false,&quot;sendTime&quot;:1648440151093}
+</system-out>
+  </testcase>
+</testsuite>

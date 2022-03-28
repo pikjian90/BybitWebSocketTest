@@ -7,6 +7,7 @@ import com.google.gson.Gson;
 import common.EndPoint;
 import common.ExpectedResult;
 import common.RealTimesResponseModel;
+import common.XLUtils;
 import org.apache.log4j.Logger;
 import org.java_websocket.enums.ReadyState;
 import org.testng.Assert;
@@ -26,13 +27,13 @@ public class RealTimes extends BaseTest {
     public Object[][] getData() throws IOException {
         //read data from excel
         String path = System.getProperty("user.dir") + "/src/test/java/resources/RealTimesData.xlsx";
-        int rowNum = common.XLUtils.getRowCount(path,"Sheet1");
-        int colNum = common.XLUtils.getCellCount(path,"sheet1",1);
+        int rowNum = XLUtils.getRowCount(path,"Sheet1");
+        int colNum = XLUtils.getCellCount(path,"sheet1",1);
         String[][] testData = new String [rowNum][colNum];
 
         for(int i=1;i<=rowNum;i++){
             for(int j=0;j<colNum;j++){
-                testData[i-1][j] = common.XLUtils.getCellData(path,"Sheet1",i,j);
+                testData[i-1][j] = XLUtils.getCellData(path,"Sheet1",i,j);
             }
         }
         return testData;

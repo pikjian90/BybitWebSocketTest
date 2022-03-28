@@ -60,18 +60,4 @@ public class XLUtils {
         return data;
     }
 
-    public static void setCellData(String xlFile, String xlSheet,int rowNum,int colNum,String data) throws IOException {
-        fi = new FileInputStream(xlFile);
-        wb = new XSSFWorkbook(fi);
-        ws = wb.getSheet(xlSheet);
-        row = ws.getRow(rowNum);
-        cell = row.createCell(colNum);
-        cell.setCellValue(data);
-        fo = new FileOutputStream(xlFile);
-        wb.write(fo);
-        wb.close();
-        fi.close();
-        fo.close();
-    }
-
 }
